@@ -1,0 +1,38 @@
+.form {
+    margin: 20px;
+}
+
+input {
+    margin-right: 10px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    background-color: #312f2f;
+    height: 50px;
+    width: 200px;
+    font-size: large;
+    text-align: center;
+}
+
+@keyframes ripple-text {
+    0% { letter-spacing: 1px; opacity: 1; transform: scale(1); }
+    50% { letter-spacing: 6px; opacity: 0.5; transform: scale(1.1); }
+    100% { letter-spacing: 1px; opacity: 1; transform: scale(1); }
+  }
+
+input::placeholder {
+    animation: ripple-text 2s infinite ease-in-out;
+    color: #aaa;
+}
+
+.submit {
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+
+.page {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}

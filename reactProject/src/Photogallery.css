@@ -1,0 +1,35 @@
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+}
+
+.photo {
+  margin: 10px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.modal-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
